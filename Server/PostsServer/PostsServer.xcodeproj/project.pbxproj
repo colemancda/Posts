@@ -12,6 +12,7 @@
 		6E56636D19D3AA3700BF4948 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E56636C19D3AA3700BF4948 /* Images.xcassets */; };
 		6E56637019D3AA3700BF4948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E56636E19D3AA3700BF4948 /* Main.storyboard */; };
 		6E56637C19D3AA3700BF4948 /* PostsServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56637B19D3AA3700BF4948 /* PostsServerTests.swift */; };
+		6ED62E8319D3AD1C00CCA9F0 /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56638B19D3AA5D00BF4948 /* CorePosts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,13 @@
 			remoteGlobalIDString = 6E56634919D3A9DF00BF4948;
 			remoteInfo = CorePostsTests;
 		};
+		6ED62E8119D3AD1500CCA9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E56638519D3AA5D00BF4948 /* CorePosts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E56633D19D3A9DF00BF4948;
+			remoteInfo = CorePosts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED62E8319D3AD1C00CCA9F0 /* CorePosts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +157,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6ED62E8219D3AD1500CCA9F0 /* PBXTargetDependency */,
 			);
 			name = PostsServer;
 			productName = PostsServer;
@@ -183,6 +193,7 @@
 				TargetAttributes = {
 					6E56636219D3AA3700BF4948 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 4W79SG34MW;
 					};
 					6E56637419D3AA3700BF4948 = {
 						CreatedOnToolsVersion = 6.1;
@@ -276,6 +287,11 @@
 			isa = PBXTargetDependency;
 			target = 6E56636219D3AA3700BF4948 /* PostsServer */;
 			targetProxy = 6E56637619D3AA3700BF4948 /* PBXContainerItemProxy */;
+		};
+		6ED62E8219D3AD1500CCA9F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CorePosts;
+			targetProxy = 6ED62E8119D3AD1500CCA9F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -372,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PostsServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -383,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PostsServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
