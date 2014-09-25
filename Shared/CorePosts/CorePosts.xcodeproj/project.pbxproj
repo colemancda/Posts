@@ -10,7 +10,7 @@
 		6E56634419D3A9DF00BF4948 /* CorePosts.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E56634319D3A9DF00BF4948 /* CorePosts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E56634A19D3A9DF00BF4948 /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56633E19D3A9DF00BF4948 /* CorePosts.framework */; };
 		6E56635119D3A9DF00BF4948 /* CorePostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56635019D3A9DF00BF4948 /* CorePostsTests.swift */; };
-		6ED62E8819D3AD2F00CCA9F0 /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED62E6319D3AA9500CCA9F0 /* NetworkObjects.framework */; };
+		6EF0DB7B19D4C4F10087DD6D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0DB7919D4C4F10087DD6D /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +35,6 @@
 			remoteGlobalIDString = 6EAD585119C3B58300DC080A;
 			remoteInfo = NetworkObjectsTests;
 		};
-		6ED62E8419D3AD2A00CCA9F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6ED62E5C19D3AA9500CCA9F0 /* NetworkObjects.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EAD584519C3B58300DC080A;
-			remoteInfo = NetworkObjects;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +45,7 @@
 		6E56634F19D3A9DF00BF4948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E56635019D3A9DF00BF4948 /* CorePostsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePostsTests.swift; sourceTree = "<group>"; };
 		6ED62E5C19D3AA9500CCA9F0 /* NetworkObjects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkObjects.xcodeproj; path = ../../NetworkObjects/NetworkObjects/NetworkObjects.xcodeproj; sourceTree = "<group>"; };
+		6EF0DB7A19D4C4F10087DD6D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED62E8819D3AD2F00CCA9F0 /* NetworkObjects.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				6E56634319D3A9DF00BF4948 /* CorePosts.h */,
+				6EF0DB7919D4C4F10087DD6D /* Model.xcdatamodeld */,
 				6E56634119D3A9DF00BF4948 /* Supporting Files */,
 			);
 			path = CorePosts;
@@ -162,7 +156,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6ED62E8519D3AD2A00CCA9F0 /* PBXTargetDependency */,
 			);
 			name = CorePosts;
 			productName = CorePosts;
@@ -267,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF0DB7B19D4C4F10087DD6D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +279,6 @@
 			isa = PBXTargetDependency;
 			target = 6E56633D19D3A9DF00BF4948 /* CorePosts */;
 			targetProxy = 6E56634B19D3A9DF00BF4948 /* PBXContainerItemProxy */;
-		};
-		6ED62E8519D3AD2A00CCA9F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NetworkObjects;
-			targetProxy = 6ED62E8419D3AD2A00CCA9F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,6 +461,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EF0DB7919D4C4F10087DD6D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EF0DB7A19D4C4F10087DD6D /* Model.xcdatamodel */,
+			);
+			currentVersion = 6EF0DB7A19D4C4F10087DD6D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6E56633519D3A9DF00BF4948 /* Project object */;
 }
