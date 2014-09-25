@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:App/Posts/Posts.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:Server/PostsServer/PostsServer.xcodeproj">
    </FileRef>
 </Workspace>

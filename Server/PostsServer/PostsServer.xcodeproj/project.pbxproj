@@ -14,16 +14,6 @@
 		6E56637C19D3AA3700BF4948 /* PostsServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56637B19D3AA3700BF4948 /* PostsServerTests.swift */; };
 		6EF0DB8619D4C9180087DD6D /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56638B19D3AA5D00BF4948 /* CorePosts.framework */; };
 		6EF0DB8719D4C9180087DD6D /* CorePosts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56638B19D3AA5D00BF4948 /* CorePosts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EF0DB8C19D4CA440087DD6D /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB8B19D4CA440087DD6D /* CocoaLumberjack.framework */; };
-		6EF0DB8D19D4CA440087DD6D /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB8B19D4CA440087DD6D /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EF0DB8F19D4CA440087DD6D /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB8E19D4CA440087DD6D /* CocoaAsyncSocket.framework */; };
-		6EF0DB9019D4CA440087DD6D /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB8E19D4CA440087DD6D /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EF0DB9219D4CA440087DD6D /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB9119D4CA440087DD6D /* CocoaHTTPServer.framework */; };
-		6EF0DB9319D4CA440087DD6D /* CocoaHTTPServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB9119D4CA440087DD6D /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EF0DB9519D4CA440087DD6D /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB9419D4CA440087DD6D /* RoutingHTTPServer.framework */; };
-		6EF0DB9619D4CA440087DD6D /* RoutingHTTPServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB9419D4CA440087DD6D /* RoutingHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EF0DB9819D4CA440087DD6D /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB9719D4CA440087DD6D /* NetworkObjects.framework */; };
-		6EF0DB9919D4CA440087DD6D /* NetworkObjects.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0DB9719D4CA440087DD6D /* NetworkObjects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +54,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6EF0DB9019D4CA440087DD6D /* CocoaAsyncSocket.framework in Embed Frameworks */,
-				6EF0DB9319D4CA440087DD6D /* CocoaHTTPServer.framework in Embed Frameworks */,
-				6EF0DB9619D4CA440087DD6D /* RoutingHTTPServer.framework in Embed Frameworks */,
-				6EF0DB8D19D4CA440087DD6D /* CocoaLumberjack.framework in Embed Frameworks */,
-				6EF0DB9919D4CA440087DD6D /* NetworkObjects.framework in Embed Frameworks */,
 				6EF0DB8719D4C9180087DD6D /* CorePosts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -87,11 +72,6 @@
 		6E56637A19D3AA3700BF4948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E56637B19D3AA3700BF4948 /* PostsServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsServerTests.swift; sourceTree = "<group>"; };
 		6E56638519D3AA5D00BF4948 /* CorePosts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePosts.xcodeproj; path = ../../Shared/CorePosts/CorePosts.xcodeproj; sourceTree = "<group>"; };
-		6EF0DB8B19D4CA440087DD6D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CocoaLumberjack.framework; path = "/Users/Coleman/Library/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug/CocoaLumberjack.framework"; sourceTree = "<absolute>"; };
-		6EF0DB8E19D4CA440087DD6D /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "/Users/Coleman/Library/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug-iphoneos/CocoaAsyncSocket.framework"; sourceTree = "<absolute>"; };
-		6EF0DB9119D4CA440087DD6D /* CocoaHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CocoaHTTPServer.framework; path = "/Users/Coleman/Library/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug-iphoneos/CocoaHTTPServer.framework"; sourceTree = "<absolute>"; };
-		6EF0DB9419D4CA440087DD6D /* RoutingHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RoutingHTTPServer.framework; path = "/Users/Coleman/Library/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug-iphoneos/RoutingHTTPServer.framework"; sourceTree = "<absolute>"; };
-		6EF0DB9719D4CA440087DD6D /* NetworkObjects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = NetworkObjects.framework; path = "/Users/Coleman/Library/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug-iphoneos/NetworkObjects.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EF0DB8F19D4CA440087DD6D /* CocoaAsyncSocket.framework in Frameworks */,
-				6EF0DB9219D4CA440087DD6D /* CocoaHTTPServer.framework in Frameworks */,
-				6EF0DB9519D4CA440087DD6D /* RoutingHTTPServer.framework in Frameworks */,
-				6EF0DB8C19D4CA440087DD6D /* CocoaLumberjack.framework in Frameworks */,
-				6EF0DB9819D4CA440087DD6D /* NetworkObjects.framework in Frameworks */,
 				6EF0DB8619D4C9180087DD6D /* CorePosts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,11 +96,6 @@
 		6E56635A19D3AA3700BF4948 = {
 			isa = PBXGroup;
 			children = (
-				6EF0DB9719D4CA440087DD6D /* NetworkObjects.framework */,
-				6EF0DB9419D4CA440087DD6D /* RoutingHTTPServer.framework */,
-				6EF0DB9119D4CA440087DD6D /* CocoaHTTPServer.framework */,
-				6EF0DB8E19D4CA440087DD6D /* CocoaAsyncSocket.framework */,
-				6EF0DB8B19D4CA440087DD6D /* CocoaLumberjack.framework */,
 				6E56638519D3AA5D00BF4948 /* CorePosts.xcodeproj */,
 				6E56636519D3AA3700BF4948 /* PostsServer */,
 				6E56637819D3AA3700BF4948 /* PostsServerTests */,

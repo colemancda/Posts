@@ -11,6 +11,7 @@
 		6E56634A19D3A9DF00BF4948 /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56633E19D3A9DF00BF4948 /* CorePosts.framework */; };
 		6E56635119D3A9DF00BF4948 /* CorePostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E56635019D3A9DF00BF4948 /* CorePostsTests.swift */; };
 		6EF0DB7B19D4C4F10087DD6D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EF0DB7919D4C4F10087DD6D /* Model.xcdatamodeld */; };
+		6EF0DBE619D4CDA10087DD6D /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED62E6319D3AA9500CCA9F0 /* NetworkObjects.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,13 @@
 			remoteGlobalIDString = 6EAD585119C3B58300DC080A;
 			remoteInfo = NetworkObjectsTests;
 		};
+		6EF0DBE219D4CD990087DD6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ED62E5C19D3AA9500CCA9F0 /* NetworkObjects.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EAD584519C3B58300DC080A;
+			remoteInfo = NetworkObjects;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF0DBE619D4CDA10087DD6D /* NetworkObjects.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +165,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6EF0DBE319D4CD990087DD6D /* PBXTargetDependency */,
 			);
 			name = CorePosts;
 			productName = CorePosts;
@@ -279,6 +289,11 @@
 			isa = PBXTargetDependency;
 			target = 6E56633D19D3A9DF00BF4948 /* CorePosts */;
 			targetProxy = 6E56634B19D3A9DF00BF4948 /* PBXContainerItemProxy */;
+		};
+		6EF0DBE319D4CD990087DD6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkObjects;
+			targetProxy = 6EF0DBE219D4CD990087DD6D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
