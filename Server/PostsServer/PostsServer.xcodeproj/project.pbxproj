@@ -226,12 +226,7 @@
 		6E56635A19D3AA3700BF4948 = {
 			isa = PBXGroup;
 			children = (
-				6EA5E4FC19D4D64300F28DCB /* Lumberjack.xcodeproj */,
-				6EA5E4F319D4D63800F28DCB /* CocoaAsyncSocket.xcodeproj */,
-				6EA5E4EA19D4D61500F28DCB /* CocoaHTTPServer.xcodeproj */,
-				6EA5E4E119D4D60B00F28DCB /* RoutingHTTPServer.xcodeproj */,
-				6EA5E4D719D4D60300F28DCB /* NetworkObjects.xcodeproj */,
-				6E56638519D3AA5D00BF4948 /* CorePosts.xcodeproj */,
+				6EA5E52D19D4DAC900F28DCB /* Frameworks */,
 				6E56636519D3AA3700BF4948 /* PostsServer */,
 				6E56637819D3AA3700BF4948 /* PostsServerTests */,
 				6E56636419D3AA3700BF4948 /* Products */,
@@ -336,6 +331,19 @@
 				6EA5E50419D4D64300F28DCB /* FmwkTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6EA5E52D19D4DAC900F28DCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E56638519D3AA5D00BF4948 /* CorePosts.xcodeproj */,
+				6EA5E4FC19D4D64300F28DCB /* Lumberjack.xcodeproj */,
+				6EA5E4F319D4D63800F28DCB /* CocoaAsyncSocket.xcodeproj */,
+				6EA5E4EA19D4D61500F28DCB /* CocoaHTTPServer.xcodeproj */,
+				6EA5E4E119D4D60B00F28DCB /* RoutingHTTPServer.xcodeproj */,
+				6EA5E4D719D4D60300F28DCB /* NetworkObjects.xcodeproj */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

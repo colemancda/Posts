@@ -225,7 +225,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6EF0DBA019D4CC440087DD6D = {
+		6EA5E53419D4DADF00F28DCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6EF0DC1E19D4D18E0087DD6D /* Lumberjack.xcodeproj */,
@@ -234,6 +234,14 @@
 				6EF0DBF719D4D10C0087DD6D /* RoutingHTTPServer.xcodeproj */,
 				6EF0DBE719D4D03B0087DD6D /* NetworkObjects.xcodeproj */,
 				6EF0DBCF19D4CC720087DD6D /* CorePosts.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EF0DBA019D4CC440087DD6D = {
+			isa = PBXGroup;
+			children = (
+				6EA5E53419D4DADF00F28DCB /* Frameworks */,
 				6EF0DBAB19D4CC440087DD6D /* Posts */,
 				6EF0DBC119D4CC440087DD6D /* PostsTests */,
 				6EF0DBAA19D4CC440087DD6D /* Products */,
@@ -797,6 +805,7 @@
 				6EF0DBCA19D4CC440087DD6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EF0DBCB19D4CC440087DD6D /* Build configuration list for PBXNativeTarget "PostsTests" */ = {
 			isa = XCConfigurationList;
@@ -805,6 +814,7 @@
 				6EF0DBCD19D4CC440087DD6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
