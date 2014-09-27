@@ -18,7 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // start server
-        ServerManager.sharedManager.server.start(onPort: 8080)
+        let port = 8080 as UInt
+        
+        let error = ServerManager.sharedManager.server.start(onPort: port)
+        
+        if error != nil {
+            
+            println("Could not start server. (\(error))")
+            
+            return false
+        }
+        
+        println("Started server on port \(port)")
         
         return true
     }
