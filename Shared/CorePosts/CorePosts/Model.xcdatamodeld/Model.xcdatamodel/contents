@@ -2,6 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6248" systemVersion="14A361c" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Attachment" isAbstract="YES" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="attachment" inverseEntity="Post" syncable="YES"/>
     </entity>
     <entity name="Client" syncable="YES">
         <attribute name="firstParty" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -16,7 +17,7 @@
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="attachment" optional="YES" maxCount="1" deletionRule="Nullify" syncable="YES"/>
+        <relationship name="attachment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachment" inverseName="post" inverseEntity="Attachment" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="posts" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" syncable="YES">
@@ -24,10 +25,10 @@
         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="user" inverseEntity="Post" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Attachment" positionX="-18" positionY="72" width="128" height="75"/>
         <element name="Client" positionX="-36" positionY="9" width="128" height="103"/>
+        <element name="Image" positionX="-27" positionY="54" width="128" height="58"/>
         <element name="Post" positionX="-54" positionY="0" width="128" height="118"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="Image" positionX="-27" positionY="54" width="128" height="58"/>
-        <element name="Attachment" positionX="-18" positionY="72" width="128" height="58"/>
     </elements>
 </model>
