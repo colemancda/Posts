@@ -11,11 +11,23 @@ import NetworkObjects
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         // Insert code here to initialize your application
         
-        println("\(ServerStatusCode.OK.rawValue)");
+        // start server
+        let port = 8080 as UInt
+        
+        let error = ServerManager.sharedManager.server.start(onPort: port)
+        
+        if error != nil {
+            
+            println("Could not start server. (\(error))")
+            
+            return
+        }
+        
+        println("Started server on port \(port)")
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {

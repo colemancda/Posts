@@ -22,6 +22,7 @@
 		6EA5E51219D4D69100F28DCB /* RoutingHTTPServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5E4E719D4D60B00F28DCB /* RoutingHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6EA5E51519D4D69100F28DCB /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5E4DE19D4D60300F28DCB /* NetworkObjects.framework */; };
 		6EA5E51619D4D69100F28DCB /* NetworkObjects.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5E4DE19D4D60300F28DCB /* NetworkObjects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6ED813F119DF7B6700D17946 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED813F019DF7B6700D17946 /* ServerManager.swift */; };
 		6EF0DB8619D4C9180087DD6D /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56638B19D3AA5D00BF4948 /* CorePosts.framework */; };
 		6EF0DB8719D4C9180087DD6D /* CorePosts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56638B19D3AA5D00BF4948 /* CorePosts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -197,6 +198,7 @@
 		6EA5E4EA19D4D61500F28DCB /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/Framework/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
 		6EA5E4F319D4D63800F28DCB /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/Framework/CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
 		6EA5E4FC19D4D64300F28DCB /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/CocoaLumberjack/Framework/Desktop/Lumberjack.xcodeproj; sourceTree = "<group>"; };
+		6ED813F019DF7B6700D17946 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				6E56636819D3AA3700BF4948 /* AppDelegate.swift */,
 				6E56636A19D3AA3700BF4948 /* ViewController.swift */,
+				6ED813F019DF7B6700D17946 /* ServerManager.swift */,
 				6E56636C19D3AA3700BF4948 /* Images.xcassets */,
 				6E56636E19D3AA3700BF4948 /* Main.storyboard */,
 				6E56636619D3AA3700BF4948 /* Supporting Files */,
@@ -567,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E56636B19D3AA3700BF4948 /* ViewController.swift in Sources */,
+				6ED813F119DF7B6700D17946 /* ServerManager.swift in Sources */,
 				6E56636919D3AA3700BF4948 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
