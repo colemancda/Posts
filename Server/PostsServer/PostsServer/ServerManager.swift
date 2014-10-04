@@ -86,7 +86,12 @@ public class ServerManager: ServerDataSource, ServerDelegate {
     
     public func server(server: Server, functionsForEntity entity: NSEntityDescription) -> [String] {
         
-        return []
+        switch entity.name! {
+            case "Post":
+            return ["like"]
+        default:
+            return []
+        }
     }
     
     public func server(server: Server, performFunction functionName: String, forManagedObject managedObject: NSManagedObject, context: NSManagedObjectContext, recievedJsonObject: [String : AnyObject]?) -> (ServerFunctionCode, [String : AnyObject]?) {
