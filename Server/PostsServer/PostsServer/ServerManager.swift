@@ -103,7 +103,7 @@ public class ServerManager: ServerDataSource, ServerDelegate {
     
     public func server(server: Server, didPerformRequest request: ServerRequest, withResponse response: ServerResponse, userInfo: [ServerUserInfoKey: AnyObject]) {
         
-        println("Successfully performed request: \(request)")
+        println("Successfully performed request and responded with: (\(response.statusCode.rawValue)) \(response.JSONResponse)")
     }
     
     public func server(server: Server, statusCodeForRequest request: ServerRequest, managedObject: NSManagedObject?) -> ServerStatusCode {
