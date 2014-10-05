@@ -96,6 +96,18 @@ public class ServerManager: ServerDataSource, ServerDelegate {
     
     public func server(server: Server, performFunction functionName: String, forManagedObject managedObject: NSManagedObject, context: NSManagedObjectContext, recievedJsonObject: [String : AnyObject]?) -> (ServerFunctionCode, [String : AnyObject]?) {
         
+        if managedObject.entity.name == "Post" {
+            
+            if functionName == "like" {
+                
+                context.performBlockAndWait({ () -> Void in
+                    
+                    
+                    
+                })
+            }
+        }
+        
         return (ServerFunctionCode.CannotPerformFunction, nil)
     }
     
@@ -111,7 +123,7 @@ public class ServerManager: ServerDataSource, ServerDelegate {
         println("Successfully performed request and responded with: (\(response.statusCode.rawValue)) \(response.JSONResponse)")
     }
     
-    public func server(server: Server, statusCodeForRequest request: ServerRequest, managedObject: NSManagedObject?) -> ServerStatusCode {
+    public func server(server: Server, statusCodeForRequest request: ServerRequest, managedObject: NSManagedObject?, context: NSManagedObjectContext?) -> ServerStatusCode {
         
         return ServerStatusCode.OK
     }
