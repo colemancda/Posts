@@ -89,6 +89,8 @@ public class ServerManager: ServerDataSource, ServerDelegate {
         switch entity.name! {
             case "Post":
             return ["like"]
+        case "User":
+            return ["authenticate"]
         default:
             return []
         }
@@ -99,6 +101,18 @@ public class ServerManager: ServerDataSource, ServerDelegate {
         if managedObject.entity.name == "Post" {
             
             if functionName == "like" {
+                
+                context.performBlockAndWait({ () -> Void in
+                    
+                    
+                    
+                })
+            }
+        }
+        
+        if managedObject.entity.name == "User" {
+            
+            if functionName == "authenticate" {
                 
                 context.performBlockAndWait({ () -> Void in
                     
