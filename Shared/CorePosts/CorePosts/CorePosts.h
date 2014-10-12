@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 ColemanCDA. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 //! Project version number for CorePosts.
 FOUNDATION_EXPORT double CorePostsVersionNumber;
