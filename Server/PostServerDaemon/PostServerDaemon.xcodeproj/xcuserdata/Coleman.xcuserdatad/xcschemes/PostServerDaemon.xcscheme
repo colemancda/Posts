@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E56636219D3AA3700BF4948"
-               BuildableName = "PostsServer.app"
-               BlueprintName = "PostsServer"
-               ReferencedContainer = "container:PostsServer.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E56637419D3AA3700BF4948"
-               BuildableName = "PostsServerTests.xctest"
-               BlueprintName = "PostsServerTests"
-               ReferencedContainer = "container:PostsServer.xcodeproj">
+               BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
+               BuildableName = "PostServerDaemon"
+               BlueprintName = "PostServerDaemon"
+               ReferencedContainer = "container:PostServerDaemon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E56637419D3AA3700BF4948"
-               BuildableName = "PostsServerTests.xctest"
-               BlueprintName = "PostsServerTests"
-               ReferencedContainer = "container:PostsServer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E56636219D3AA3700BF4948"
-            BuildableName = "PostsServer.app"
-            BlueprintName = "PostsServer"
-            ReferencedContainer = "container:PostsServer.xcodeproj">
+            BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
+            BuildableName = "PostServerDaemon"
+            BlueprintName = "PostServerDaemon"
+            ReferencedContainer = "container:PostServerDaemon.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E56636219D3AA3700BF4948"
-            BuildableName = "PostsServer.app"
-            BlueprintName = "PostsServer"
-            ReferencedContainer = "container:PostsServer.xcodeproj">
+            BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
+            BuildableName = "PostServerDaemon"
+            BlueprintName = "PostServerDaemon"
+            ReferencedContainer = "container:PostServerDaemon.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E56636219D3AA3700BF4948"
-            BuildableName = "PostsServer.app"
-            BlueprintName = "PostsServer"
-            ReferencedContainer = "container:PostsServer.xcodeproj">
+            BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
+            BuildableName = "PostServerDaemon"
+            BlueprintName = "PostServerDaemon"
+            ReferencedContainer = "container:PostServerDaemon.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
