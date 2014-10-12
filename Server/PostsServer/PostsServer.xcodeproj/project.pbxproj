@@ -7,187 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E58F2FB19EAFA4300265AE6 /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E58F2F319EAFA0B00265AE6 /* CorePosts.framework */; };
-		6E58F2FD19EAFBAE00265AE6 /* PostsServerDeamon in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E73DB0B19EAF90800826F55 /* PostsServerDeamon */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		6E73DB0E19EAF90800826F55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73DB0D19EAF90800826F55 /* main.swift */; };
-		6E73DB1319EAF91F00826F55 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73DB1219EAF91F00826F55 /* ServerManager.swift */; };
-		6E73DB5119EAF98D00826F55 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73DB3C19EAF93C00826F55 /* CocoaAsyncSocket.framework */; };
-		6E73DB5219EAF98D00826F55 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73DB3419EAF93C00826F55 /* CocoaHTTPServer.framework */; };
-		6E73DB5319EAF98D00826F55 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73DB4419EAF93C00826F55 /* CocoaLumberjack.framework */; };
-		6E73DB5419EAF98D00826F55 /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73DB2619EAF93C00826F55 /* NetworkObjects.framework */; };
-		6E73DB5519EAF98D00826F55 /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E73DB2C19EAF93C00826F55 /* RoutingHTTPServer.framework */; };
-		6E73DB6519EAF9E300826F55 /* NetworkObjects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E73DB2619EAF93C00826F55 /* NetworkObjects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EFCCE4E19EAFF4800889B72 /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E73DB3C19EAF93C00826F55 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EFCCE4F19EAFF4800889B72 /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E73DB3419EAF93C00826F55 /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EFCCE5019EAFF4900889B72 /* RoutingHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E73DB2C19EAF93C00826F55 /* RoutingHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6EFCCE5119EAFF4900889B72 /* CorePosts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E58F2F319EAFA0B00265AE6 /* CorePosts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E14C19519EB2D53006AF4BB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E14C19419EB2D53006AF4BB /* main.swift */; };
+		6E14C19A19EB2DC7006AF4BB /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E14C19919EB2DC7006AF4BB /* ServerManager.swift */; };
+		6E6F75B519EB3870008D83BA /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E98894919EB2EF100D53E5C /* NetworkObjects.framework */; };
+		6E98894D19EB2F1A00D53E5C /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E98894E19EB2F1A00D53E5C /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E98894F19EB2F1A00D53E5C /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E98895019EB2F1A00D53E5C /* RoutingHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3761719EB2E31003A5288 /* RoutingHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E98895119EB2F1A00D53E5C /* NetworkObjects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E98894919EB2EF100D53E5C /* NetworkObjects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E98895219EB2F1A00D53E5C /* CorePosts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3761119EB2E31003A5288 /* CorePosts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6ED3763419EB2E49003A5288 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */; };
+		6ED3763519EB2E49003A5288 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */; };
+		6ED3763619EB2E49003A5288 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */; };
+		6ED3763719EB2E49003A5288 /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3761119EB2E31003A5288 /* CorePosts.framework */; };
+		6ED3763819EB2E49003A5288 /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3761719EB2E31003A5288 /* RoutingHTTPServer.framework */; };
+		6ED3763A19EB2EBB003A5288 /* PostsServerDaemon in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E14C19219EB2D53006AF4BB /* PostsServerDaemon */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6E58F2F219EAFA0B00265AE6 /* PBXContainerItemProxy */ = {
+		6E14C19B19EB2E03006AF4BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6E56633E19D3A9DF00BF4948;
-			remoteInfo = CorePosts;
-		};
-		6E58F2F419EAFA0B00265AE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6E56634919D3A9DF00BF4948;
-			remoteInfo = CorePostsTests;
-		};
-		6E58F2F919EAFA4000265AE6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */;
+			containerPortal = 6E14C17C19EB2D34006AF4BB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6E56633D19D3A9DF00BF4948;
-			remoteInfo = CorePosts;
+			remoteGlobalIDString = 6E14C19119EB2D53006AF4BB;
+			remoteInfo = PostsServerDaemon;
 		};
-		6E58F30619EAFCBD00265AE6 /* PBXContainerItemProxy */ = {
+		6E98894819EB2EF100D53E5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EAD584519C3B58300DC080A;
-			remoteInfo = NetworkObjects;
-		};
-		6E73DB2519EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */;
+			containerPortal = 6E14C1A119EB2E12006AF4BB /* NetworkObjects.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6EAD584619C3B58300DC080A;
 			remoteInfo = NetworkObjects;
 		};
-		6E73DB2719EAF93C00826F55 /* PBXContainerItemProxy */ = {
+		6E98894A19EB2EF100D53E5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */;
+			containerPortal = 6E14C1A119EB2E12006AF4BB /* NetworkObjects.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 6EAD585119C3B58300DC080A;
 			remoteInfo = NetworkObjectsTests;
 		};
-		6E73DB2B19EAF93C00826F55 /* PBXContainerItemProxy */ = {
+		6E98895319EB2F3000D53E5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EC750FF19C40645009F0E00;
-			remoteInfo = RoutingHTTPServer;
-		};
-		6E73DB2D19EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EC7510A19C40645009F0E00;
-			remoteInfo = RoutingHTTPServerTests;
-		};
-		6E73DB3319EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EF631E519C4178D006FBD89;
-			remoteInfo = CocoaHTTPServer;
-		};
-		6E73DB3519EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EF631F019C4178D006FBD89;
-			remoteInfo = CocoaHTTPServerTests;
-		};
-		6E73DB3B19EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EC7514019C4116E009F0E00;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		6E73DB3D19EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6EC7514B19C4116E009F0E00;
-			remoteInfo = CocoaAsyncSocketTests;
-		};
-		6E73DB4319EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE219EAF0A400826F55 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCB3185114EB418E001CFBEE;
-			remoteInfo = CocoaLumberjack;
-		};
-		6E73DB4519EAF93C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE219EAF0A400826F55 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCB318CA14ED6C3B001CFBEE;
-			remoteInfo = FmwkTest;
-		};
-		6E73DB4719EAF96C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE219EAF0A400826F55 /* Lumberjack.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DCB3185014EB418E001CFBEE;
-			remoteInfo = CocoaLumberjack;
-		};
-		6E73DB4919EAF96C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EC7513F19C4116E009F0E00;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		6E73DB4B19EAF96C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EF631E419C4178D006FBD89;
-			remoteInfo = CocoaHTTPServer;
-		};
-		6E73DB4D19EAF96C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6EC750FE19C40645009F0E00;
-			remoteInfo = RoutingHTTPServer;
-		};
-		6E73DB4F19EAF96C00826F55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */;
+			containerPortal = 6E14C1A119EB2E12006AF4BB /* NetworkObjects.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6EAD584519C3B58300DC080A;
 			remoteInfo = NetworkObjects;
 		};
-		6E73DB5819EAF9A900826F55 /* PBXContainerItemProxy */ = {
+		6ED3760A19EB2E31003A5288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAD019EAF05300826F55 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E73DB0A19EAF90800826F55;
-			remoteInfo = PostsServerDeamon;
+			containerPortal = 6E14C19F19EB2E12006AF4BB /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EF631E519C4178D006FBD89;
+			remoteInfo = CocoaHTTPServer;
 		};
-		6EFCCE5219EAFF5300889B72 /* PBXContainerItemProxy */ = {
+		6ED3760C19EB2E31003A5288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */;
+			containerPortal = 6E14C19F19EB2E12006AF4BB /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EF631F019C4178D006FBD89;
+			remoteInfo = CocoaHTTPServerTests;
+		};
+		6ED3761019EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E56633E19D3A9DF00BF4948;
+			remoteInfo = CorePosts;
+		};
+		6ED3761219EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E56634919D3A9DF00BF4948;
+			remoteInfo = CorePostsTests;
+		};
+		6ED3761619EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C1A019EB2E12006AF4BB /* RoutingHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EC750FF19C40645009F0E00;
+			remoteInfo = RoutingHTTPServer;
+		};
+		6ED3761819EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C1A019EB2E12006AF4BB /* RoutingHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EC7510A19C40645009F0E00;
+			remoteInfo = RoutingHTTPServerTests;
+		};
+		6ED3762019EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C19E19EB2E12006AF4BB /* CocoaAsyncSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EC7514019C4116E009F0E00;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		6ED3762219EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C19E19EB2E12006AF4BB /* CocoaAsyncSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EC7514B19C4116E009F0E00;
+			remoteInfo = CocoaAsyncSocketTests;
+		};
+		6ED3762619EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C19D19EB2E12006AF4BB /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCB3185114EB418E001CFBEE;
+			remoteInfo = CocoaLumberjack;
+		};
+		6ED3762819EB2E31003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C19D19EB2E12006AF4BB /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCB318CA14ED6C3B001CFBEE;
+			remoteInfo = FmwkTest;
+		};
+		6ED3762A19EB2E3F003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C19D19EB2E12006AF4BB /* Lumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB3185014EB418E001CFBEE;
+			remoteInfo = CocoaLumberjack;
+		};
+		6ED3762C19EB2E3F003A5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E14C19E19EB2E12006AF4BB /* CocoaAsyncSocket.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6EC7513F19C4116E009F0E00;
 			remoteInfo = CocoaAsyncSocket;
 		};
-		6EFCCE5419EAFF5300889B72 /* PBXContainerItemProxy */ = {
+		6ED3762E19EB2E3F003A5288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */;
+			containerPortal = 6E14C19F19EB2E12006AF4BB /* CocoaHTTPServer.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6EF631E419C4178D006FBD89;
 			remoteInfo = CocoaHTTPServer;
 		};
-		6EFCCE5619EAFF5300889B72 /* PBXContainerItemProxy */ = {
+		6ED3763019EB2E3F003A5288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */;
+			containerPortal = 6E14C1A019EB2E12006AF4BB /* RoutingHTTPServer.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6EC750FE19C40645009F0E00;
 			remoteInfo = RoutingHTTPServer;
 		};
-		6EFCCE5819EAFF5300889B72 /* PBXContainerItemProxy */ = {
+		6ED3763219EB2E3F003A5288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */;
+			containerPortal = 6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 6E56633D19D3A9DF00BF4948;
 			remoteInfo = CorePosts;
@@ -195,187 +161,179 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6E58F2FC19EAFB9E00265AE6 /* CopyFiles */ = {
+		6ED3763919EB2EAC003A5288 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				6E58F2FD19EAFBAE00265AE6 /* PostsServerDeamon in CopyFiles */,
+				6ED3763A19EB2EBB003A5288 /* PostsServerDaemon in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E73DAF519EAF79100826F55 /* CopyFiles */ = {
+		6ED3763B19EB2EBE003A5288 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6EFCCE4E19EAFF4800889B72 /* CocoaAsyncSocket.framework in CopyFiles */,
-				6EFCCE4F19EAFF4800889B72 /* CocoaHTTPServer.framework in CopyFiles */,
-				6EFCCE5019EAFF4900889B72 /* RoutingHTTPServer.framework in CopyFiles */,
-				6EFCCE5119EAFF4900889B72 /* CorePosts.framework in CopyFiles */,
-				6E73DB6519EAF9E300826F55 /* NetworkObjects.framework in CopyFiles */,
+				6E98894D19EB2F1A00D53E5C /* CocoaLumberjack.framework in CopyFiles */,
+				6E98894E19EB2F1A00D53E5C /* CocoaAsyncSocket.framework in CopyFiles */,
+				6E98894F19EB2F1A00D53E5C /* CocoaHTTPServer.framework in CopyFiles */,
+				6E98895019EB2F1A00D53E5C /* RoutingHTTPServer.framework in CopyFiles */,
+				6E98895119EB2F1A00D53E5C /* NetworkObjects.framework in CopyFiles */,
+				6E98895219EB2F1A00D53E5C /* CorePosts.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E73DB0919EAF90800826F55 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6E73DAD819EAF05300826F55 /* PostsServer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsServer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E73DADC19EAF05300826F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E73DAE219EAF0A400826F55 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/CocoaLumberjack/Framework/Desktop/Lumberjack.xcodeproj; sourceTree = "<group>"; };
-		6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/Framework/CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
-		6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/Framework/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
-		6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RoutingHTTPServer.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/Framework/RoutingHTTPServer/RoutingHTTPServer.xcodeproj; sourceTree = "<group>"; };
-		6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkObjects.xcodeproj; path = ../../NetworkObjects/NetworkObjects/NetworkObjects.xcodeproj; sourceTree = "<group>"; };
-		6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePosts.xcodeproj; path = ../../Shared/CorePosts/CorePosts.xcodeproj; sourceTree = "<group>"; };
-		6E73DB0B19EAF90800826F55 /* PostsServerDeamon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PostsServerDeamon; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E73DB0D19EAF90800826F55 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		6E73DB1219EAF91F00826F55 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		6E14C18419EB2D34006AF4BB /* PostsServer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsServer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E14C18819EB2D34006AF4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E14C19219EB2D53006AF4BB /* PostsServerDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PostsServerDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E14C19419EB2D53006AF4BB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6E14C19919EB2DC7006AF4BB /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		6E14C19D19EB2E12006AF4BB /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/CocoaLumberjack/Framework/Desktop/Lumberjack.xcodeproj; sourceTree = "<group>"; };
+		6E14C19E19EB2E12006AF4BB /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/CocoaAsyncSocket/Framework/CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
+		6E14C19F19EB2E12006AF4BB /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/External/CocoaHTTPServer/Framework/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
+		6E14C1A019EB2E12006AF4BB /* RoutingHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RoutingHTTPServer.xcodeproj; path = ../../NetworkObjects/RoutingHTTPServer/Framework/RoutingHTTPServer/RoutingHTTPServer.xcodeproj; sourceTree = "<group>"; };
+		6E14C1A119EB2E12006AF4BB /* NetworkObjects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkObjects.xcodeproj; path = ../../NetworkObjects/NetworkObjects/NetworkObjects.xcodeproj; sourceTree = "<group>"; };
+		6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePosts.xcodeproj; path = ../../Shared/CorePosts/CorePosts.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E73DAD519EAF05300826F55 /* Frameworks */ = {
+		6E14C18119EB2D34006AF4BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E73DB0819EAF90800826F55 /* Frameworks */ = {
+		6E14C18F19EB2D53006AF4BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E58F2FB19EAFA4300265AE6 /* CorePosts.framework in Frameworks */,
-				6E73DB5119EAF98D00826F55 /* CocoaAsyncSocket.framework in Frameworks */,
-				6E73DB5219EAF98D00826F55 /* CocoaHTTPServer.framework in Frameworks */,
-				6E73DB5319EAF98D00826F55 /* CocoaLumberjack.framework in Frameworks */,
-				6E73DB5419EAF98D00826F55 /* NetworkObjects.framework in Frameworks */,
-				6E73DB5519EAF98D00826F55 /* RoutingHTTPServer.framework in Frameworks */,
+				6E6F75B519EB3870008D83BA /* NetworkObjects.framework in Frameworks */,
+				6ED3763419EB2E49003A5288 /* CocoaAsyncSocket.framework in Frameworks */,
+				6ED3763519EB2E49003A5288 /* CocoaHTTPServer.framework in Frameworks */,
+				6ED3763619EB2E49003A5288 /* CocoaLumberjack.framework in Frameworks */,
+				6ED3763719EB2E49003A5288 /* CorePosts.framework in Frameworks */,
+				6ED3763819EB2E49003A5288 /* RoutingHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E58F2EC19EAFA0B00265AE6 /* Products */ = {
+		6E14C17B19EB2D34006AF4BB = {
 			isa = PBXGroup;
 			children = (
-				6E58F2F319EAFA0B00265AE6 /* CorePosts.framework */,
-				6E58F2F519EAFA0B00265AE6 /* CorePostsTests.xctest */,
+				6E14C1A319EB2E12006AF4BB /* Frameworks */,
+				6E14C18619EB2D34006AF4BB /* PostsServer */,
+				6E14C19319EB2D53006AF4BB /* PostsServerDaemon */,
+				6E14C18519EB2D34006AF4BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E14C18519EB2D34006AF4BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E14C18419EB2D34006AF4BB /* PostsServer.bundle */,
+				6E14C19219EB2D53006AF4BB /* PostsServerDaemon */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E73DACF19EAF05300826F55 = {
+		6E14C18619EB2D34006AF4BB /* PostsServer */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DAE819EAF0A400826F55 /* Frameworks */,
-				6E73DB0C19EAF90800826F55 /* PostsServerDeamon */,
-				6E73DADA19EAF05300826F55 /* PostsServer */,
-				6E73DAD919EAF05300826F55 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		6E73DAD919EAF05300826F55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6E73DAD819EAF05300826F55 /* PostsServer.bundle */,
-				6E73DB0B19EAF90800826F55 /* PostsServerDeamon */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6E73DADA19EAF05300826F55 /* PostsServer */ = {
-			isa = PBXGroup;
-			children = (
-				6E73DADB19EAF05300826F55 /* Supporting Files */,
+				6E14C18719EB2D34006AF4BB /* Supporting Files */,
 			);
 			path = PostsServer;
 			sourceTree = "<group>";
 		};
-		6E73DADB19EAF05300826F55 /* Supporting Files */ = {
+		6E14C18719EB2D34006AF4BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DADC19EAF05300826F55 /* Info.plist */,
+				6E14C18819EB2D34006AF4BB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6E73DAE819EAF0A400826F55 /* Frameworks */ = {
+		6E14C19319EB2D53006AF4BB /* PostsServerDaemon */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DAE219EAF0A400826F55 /* Lumberjack.xcodeproj */,
-				6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */,
-				6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */,
-				6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */,
-				6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */,
-				6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */,
+				6E14C19419EB2D53006AF4BB /* main.swift */,
+				6E14C19919EB2DC7006AF4BB /* ServerManager.swift */,
+			);
+			path = PostsServerDaemon;
+			sourceTree = "<group>";
+		};
+		6E14C1A319EB2E12006AF4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E14C19D19EB2E12006AF4BB /* Lumberjack.xcodeproj */,
+				6E14C19E19EB2E12006AF4BB /* CocoaAsyncSocket.xcodeproj */,
+				6E14C19F19EB2E12006AF4BB /* CocoaHTTPServer.xcodeproj */,
+				6E14C1A019EB2E12006AF4BB /* RoutingHTTPServer.xcodeproj */,
+				6E14C1A119EB2E12006AF4BB /* NetworkObjects.xcodeproj */,
+				6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */,
 			);
 			name = Frameworks;
 			path = ../../App/Posts;
 			sourceTree = "<group>";
 		};
-		6E73DB0C19EAF90800826F55 /* PostsServerDeamon */ = {
+		6E98894019EB2EF100D53E5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DB0D19EAF90800826F55 /* main.swift */,
-				6E73DB1219EAF91F00826F55 /* ServerManager.swift */,
-			);
-			path = PostsServerDeamon;
-			sourceTree = "<group>";
-		};
-		6E73DB1F19EAF93C00826F55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6E73DB2619EAF93C00826F55 /* NetworkObjects.framework */,
-				6E73DB2819EAF93C00826F55 /* NetworkObjectsTests.xctest */,
+				6E98894919EB2EF100D53E5C /* NetworkObjects.framework */,
+				6E98894B19EB2EF100D53E5C /* NetworkObjectsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E73DB2119EAF93C00826F55 /* Products */ = {
+		6ED3760219EB2E31003A5288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DB2C19EAF93C00826F55 /* RoutingHTTPServer.framework */,
-				6E73DB2E19EAF93C00826F55 /* RoutingHTTPServerTests.xctest */,
+				6ED3761719EB2E31003A5288 /* RoutingHTTPServer.framework */,
+				6ED3761919EB2E31003A5288 /* RoutingHTTPServerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E73DB2F19EAF93C00826F55 /* Products */ = {
+		6ED3760419EB2E31003A5288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DB3419EAF93C00826F55 /* CocoaHTTPServer.framework */,
-				6E73DB3619EAF93C00826F55 /* CocoaHTTPServerTests.xctest */,
+				6ED3761119EB2E31003A5288 /* CorePosts.framework */,
+				6ED3761319EB2E31003A5288 /* CorePostsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E73DB3719EAF93C00826F55 /* Products */ = {
+		6ED3760619EB2E31003A5288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DB3C19EAF93C00826F55 /* CocoaAsyncSocket.framework */,
-				6E73DB3E19EAF93C00826F55 /* CocoaAsyncSocketTests.xctest */,
+				6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */,
+				6ED3760D19EB2E31003A5288 /* CocoaHTTPServerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E73DB3F19EAF93C00826F55 /* Products */ = {
+		6ED3761A19EB2E31003A5288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E73DB4419EAF93C00826F55 /* CocoaLumberjack.framework */,
-				6E73DB4619EAF93C00826F55 /* FmwkTest.app */,
+				6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */,
+				6ED3762919EB2E31003A5288 /* FmwkTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6ED3761C19EB2E31003A5288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */,
+				6ED3762319EB2E31003A5288 /* CocoaAsyncSocketTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -383,204 +341,198 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E73DAD719EAF05300826F55 /* PostsServer */ = {
+		6E14C18319EB2D34006AF4BB /* PostsServer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E73DADF19EAF05300826F55 /* Build configuration list for PBXNativeTarget "PostsServer" */;
+			buildConfigurationList = 6E14C18B19EB2D34006AF4BB /* Build configuration list for PBXNativeTarget "PostsServer" */;
 			buildPhases = (
-				6E73DAD419EAF05300826F55 /* Sources */,
-				6E73DAD519EAF05300826F55 /* Frameworks */,
-				6E73DAD619EAF05300826F55 /* Resources */,
-				6E73DAF519EAF79100826F55 /* CopyFiles */,
-				6E58F2FC19EAFB9E00265AE6 /* CopyFiles */,
+				6E14C18019EB2D34006AF4BB /* Sources */,
+				6E14C18119EB2D34006AF4BB /* Frameworks */,
+				6E14C18219EB2D34006AF4BB /* Resources */,
+				6ED3763919EB2EAC003A5288 /* CopyFiles */,
+				6ED3763B19EB2EBE003A5288 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6EFCCE5319EAFF5300889B72 /* PBXTargetDependency */,
-				6EFCCE5519EAFF5300889B72 /* PBXTargetDependency */,
-				6EFCCE5719EAFF5300889B72 /* PBXTargetDependency */,
-				6EFCCE5919EAFF5300889B72 /* PBXTargetDependency */,
-				6E58F30719EAFCBD00265AE6 /* PBXTargetDependency */,
-				6E73DB5919EAF9A900826F55 /* PBXTargetDependency */,
+				6E14C19C19EB2E03006AF4BB /* PBXTargetDependency */,
 			);
 			name = PostsServer;
 			productName = PostsServer;
-			productReference = 6E73DAD819EAF05300826F55 /* PostsServer.bundle */;
+			productReference = 6E14C18419EB2D34006AF4BB /* PostsServer.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		6E73DB0A19EAF90800826F55 /* PostsServerDeamon */ = {
+		6E14C19119EB2D53006AF4BB /* PostsServerDaemon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E73DB0F19EAF90800826F55 /* Build configuration list for PBXNativeTarget "PostsServerDeamon" */;
+			buildConfigurationList = 6E14C19619EB2D53006AF4BB /* Build configuration list for PBXNativeTarget "PostsServerDaemon" */;
 			buildPhases = (
-				6E73DB0719EAF90800826F55 /* Sources */,
-				6E73DB0819EAF90800826F55 /* Frameworks */,
-				6E73DB0919EAF90800826F55 /* CopyFiles */,
+				6E14C18E19EB2D53006AF4BB /* Sources */,
+				6E14C18F19EB2D53006AF4BB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6E58F2FA19EAFA4000265AE6 /* PBXTargetDependency */,
-				6E73DB4819EAF96C00826F55 /* PBXTargetDependency */,
-				6E73DB4A19EAF96C00826F55 /* PBXTargetDependency */,
-				6E73DB4C19EAF96C00826F55 /* PBXTargetDependency */,
-				6E73DB4E19EAF96C00826F55 /* PBXTargetDependency */,
-				6E73DB5019EAF96C00826F55 /* PBXTargetDependency */,
+				6E98895419EB2F3000D53E5C /* PBXTargetDependency */,
+				6ED3762B19EB2E3F003A5288 /* PBXTargetDependency */,
+				6ED3762D19EB2E3F003A5288 /* PBXTargetDependency */,
+				6ED3762F19EB2E3F003A5288 /* PBXTargetDependency */,
+				6ED3763119EB2E3F003A5288 /* PBXTargetDependency */,
+				6ED3763319EB2E3F003A5288 /* PBXTargetDependency */,
 			);
-			name = PostsServerDeamon;
-			productName = PostsServerDeamon;
-			productReference = 6E73DB0B19EAF90800826F55 /* PostsServerDeamon */;
+			name = PostsServerDaemon;
+			productName = PostsServerDaemon;
+			productReference = 6E14C19219EB2D53006AF4BB /* PostsServerDaemon */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E73DAD019EAF05300826F55 /* Project object */ = {
+		6E14C17C19EB2D34006AF4BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = ColemanCDA;
 				TargetAttributes = {
-					6E73DAD719EAF05300826F55 = {
+					6E14C18319EB2D34006AF4BB = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					6E73DB0A19EAF90800826F55 = {
+					6E14C19119EB2D53006AF4BB = {
 						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
-			buildConfigurationList = 6E73DAD319EAF05300826F55 /* Build configuration list for PBXProject "PostsServer" */;
+			buildConfigurationList = 6E14C17F19EB2D34006AF4BB /* Build configuration list for PBXProject "PostsServer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6E73DACF19EAF05300826F55;
-			productRefGroup = 6E73DAD919EAF05300826F55 /* Products */;
+			mainGroup = 6E14C17B19EB2D34006AF4BB;
+			productRefGroup = 6E14C18519EB2D34006AF4BB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6E73DB3719EAF93C00826F55 /* Products */;
-					ProjectRef = 6E73DAE319EAF0A400826F55 /* CocoaAsyncSocket.xcodeproj */;
+					ProductGroup = 6ED3761C19EB2E31003A5288 /* Products */;
+					ProjectRef = 6E14C19E19EB2E12006AF4BB /* CocoaAsyncSocket.xcodeproj */;
 				},
 				{
-					ProductGroup = 6E73DB2F19EAF93C00826F55 /* Products */;
-					ProjectRef = 6E73DAE419EAF0A400826F55 /* CocoaHTTPServer.xcodeproj */;
+					ProductGroup = 6ED3760619EB2E31003A5288 /* Products */;
+					ProjectRef = 6E14C19F19EB2E12006AF4BB /* CocoaHTTPServer.xcodeproj */;
 				},
 				{
-					ProductGroup = 6E58F2EC19EAFA0B00265AE6 /* Products */;
-					ProjectRef = 6E73DAE719EAF0A400826F55 /* CorePosts.xcodeproj */;
+					ProductGroup = 6ED3760419EB2E31003A5288 /* Products */;
+					ProjectRef = 6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */;
 				},
 				{
-					ProductGroup = 6E73DB3F19EAF93C00826F55 /* Products */;
-					ProjectRef = 6E73DAE219EAF0A400826F55 /* Lumberjack.xcodeproj */;
+					ProductGroup = 6ED3761A19EB2E31003A5288 /* Products */;
+					ProjectRef = 6E14C19D19EB2E12006AF4BB /* Lumberjack.xcodeproj */;
 				},
 				{
-					ProductGroup = 6E73DB1F19EAF93C00826F55 /* Products */;
-					ProjectRef = 6E73DAE619EAF0A400826F55 /* NetworkObjects.xcodeproj */;
+					ProductGroup = 6E98894019EB2EF100D53E5C /* Products */;
+					ProjectRef = 6E14C1A119EB2E12006AF4BB /* NetworkObjects.xcodeproj */;
 				},
 				{
-					ProductGroup = 6E73DB2119EAF93C00826F55 /* Products */;
-					ProjectRef = 6E73DAE519EAF0A400826F55 /* RoutingHTTPServer.xcodeproj */;
+					ProductGroup = 6ED3760219EB2E31003A5288 /* Products */;
+					ProjectRef = 6E14C1A019EB2E12006AF4BB /* RoutingHTTPServer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				6E73DAD719EAF05300826F55 /* PostsServer */,
-				6E73DB0A19EAF90800826F55 /* PostsServerDeamon */,
+				6E14C18319EB2D34006AF4BB /* PostsServer */,
+				6E14C19119EB2D53006AF4BB /* PostsServerDaemon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6E58F2F319EAFA0B00265AE6 /* CorePosts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CorePosts.framework;
-			remoteRef = 6E58F2F219EAFA0B00265AE6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E58F2F519EAFA0B00265AE6 /* CorePostsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CorePostsTests.xctest;
-			remoteRef = 6E58F2F419EAFA0B00265AE6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E73DB2619EAF93C00826F55 /* NetworkObjects.framework */ = {
+		6E98894919EB2EF100D53E5C /* NetworkObjects.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = NetworkObjects.framework;
-			remoteRef = 6E73DB2519EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6E98894819EB2EF100D53E5C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB2819EAF93C00826F55 /* NetworkObjectsTests.xctest */ = {
+		6E98894B19EB2EF100D53E5C /* NetworkObjectsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = NetworkObjectsTests.xctest;
-			remoteRef = 6E73DB2719EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6E98894A19EB2EF100D53E5C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB2C19EAF93C00826F55 /* RoutingHTTPServer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RoutingHTTPServer.framework;
-			remoteRef = 6E73DB2B19EAF93C00826F55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E73DB2E19EAF93C00826F55 /* RoutingHTTPServerTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RoutingHTTPServerTests.xctest;
-			remoteRef = 6E73DB2D19EAF93C00826F55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E73DB3419EAF93C00826F55 /* CocoaHTTPServer.framework */ = {
+		6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CocoaHTTPServer.framework;
-			remoteRef = 6E73DB3319EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6ED3760A19EB2E31003A5288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB3619EAF93C00826F55 /* CocoaHTTPServerTests.xctest */ = {
+		6ED3760D19EB2E31003A5288 /* CocoaHTTPServerTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CocoaHTTPServerTests.xctest;
-			remoteRef = 6E73DB3519EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6ED3760C19EB2E31003A5288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB3C19EAF93C00826F55 /* CocoaAsyncSocket.framework */ = {
+		6ED3761119EB2E31003A5288 /* CorePosts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePosts.framework;
+			remoteRef = 6ED3761019EB2E31003A5288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6ED3761319EB2E31003A5288 /* CorePostsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CorePostsTests.xctest;
+			remoteRef = 6ED3761219EB2E31003A5288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6ED3761719EB2E31003A5288 /* RoutingHTTPServer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RoutingHTTPServer.framework;
+			remoteRef = 6ED3761619EB2E31003A5288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6ED3761919EB2E31003A5288 /* RoutingHTTPServerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RoutingHTTPServerTests.xctest;
+			remoteRef = 6ED3761819EB2E31003A5288 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CocoaAsyncSocket.framework;
-			remoteRef = 6E73DB3B19EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6ED3762019EB2E31003A5288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB3E19EAF93C00826F55 /* CocoaAsyncSocketTests.xctest */ = {
+		6ED3762319EB2E31003A5288 /* CocoaAsyncSocketTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CocoaAsyncSocketTests.xctest;
-			remoteRef = 6E73DB3D19EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6ED3762219EB2E31003A5288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB4419EAF93C00826F55 /* CocoaLumberjack.framework */ = {
+		6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CocoaLumberjack.framework;
-			remoteRef = 6E73DB4319EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6ED3762619EB2E31003A5288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E73DB4619EAF93C00826F55 /* FmwkTest.app */ = {
+		6ED3762919EB2E31003A5288 /* FmwkTest.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = FmwkTest.app;
-			remoteRef = 6E73DB4519EAF93C00826F55 /* PBXContainerItemProxy */;
+			remoteRef = 6ED3762819EB2E31003A5288 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E73DAD619EAF05300826F55 /* Resources */ = {
+		6E14C18219EB2D34006AF4BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -590,89 +542,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E73DAD419EAF05300826F55 /* Sources */ = {
+		6E14C18019EB2D34006AF4BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E73DB0719EAF90800826F55 /* Sources */ = {
+		6E14C18E19EB2D53006AF4BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E73DB1319EAF91F00826F55 /* ServerManager.swift in Sources */,
-				6E73DB0E19EAF90800826F55 /* main.swift in Sources */,
+				6E14C19A19EB2DC7006AF4BB /* ServerManager.swift in Sources */,
+				6E14C19519EB2D53006AF4BB /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E58F2FA19EAFA4000265AE6 /* PBXTargetDependency */ = {
+		6E14C19C19EB2E03006AF4BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CorePosts;
-			targetProxy = 6E58F2F919EAFA4000265AE6 /* PBXContainerItemProxy */;
+			target = 6E14C19119EB2D53006AF4BB /* PostsServerDaemon */;
+			targetProxy = 6E14C19B19EB2E03006AF4BB /* PBXContainerItemProxy */;
 		};
-		6E58F30719EAFCBD00265AE6 /* PBXTargetDependency */ = {
+		6E98895419EB2F3000D53E5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NetworkObjects;
-			targetProxy = 6E58F30619EAFCBD00265AE6 /* PBXContainerItemProxy */;
+			targetProxy = 6E98895319EB2F3000D53E5C /* PBXContainerItemProxy */;
 		};
-		6E73DB4819EAF96C00826F55 /* PBXTargetDependency */ = {
+		6ED3762B19EB2E3F003A5288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaLumberjack;
-			targetProxy = 6E73DB4719EAF96C00826F55 /* PBXContainerItemProxy */;
+			targetProxy = 6ED3762A19EB2E3F003A5288 /* PBXContainerItemProxy */;
 		};
-		6E73DB4A19EAF96C00826F55 /* PBXTargetDependency */ = {
+		6ED3762D19EB2E3F003A5288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
-			targetProxy = 6E73DB4919EAF96C00826F55 /* PBXContainerItemProxy */;
+			targetProxy = 6ED3762C19EB2E3F003A5288 /* PBXContainerItemProxy */;
 		};
-		6E73DB4C19EAF96C00826F55 /* PBXTargetDependency */ = {
+		6ED3762F19EB2E3F003A5288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaHTTPServer;
-			targetProxy = 6E73DB4B19EAF96C00826F55 /* PBXContainerItemProxy */;
+			targetProxy = 6ED3762E19EB2E3F003A5288 /* PBXContainerItemProxy */;
 		};
-		6E73DB4E19EAF96C00826F55 /* PBXTargetDependency */ = {
+		6ED3763119EB2E3F003A5288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RoutingHTTPServer;
-			targetProxy = 6E73DB4D19EAF96C00826F55 /* PBXContainerItemProxy */;
+			targetProxy = 6ED3763019EB2E3F003A5288 /* PBXContainerItemProxy */;
 		};
-		6E73DB5019EAF96C00826F55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NetworkObjects;
-			targetProxy = 6E73DB4F19EAF96C00826F55 /* PBXContainerItemProxy */;
-		};
-		6E73DB5919EAF9A900826F55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E73DB0A19EAF90800826F55 /* PostsServerDeamon */;
-			targetProxy = 6E73DB5819EAF9A900826F55 /* PBXContainerItemProxy */;
-		};
-		6EFCCE5319EAFF5300889B72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaAsyncSocket;
-			targetProxy = 6EFCCE5219EAFF5300889B72 /* PBXContainerItemProxy */;
-		};
-		6EFCCE5519EAFF5300889B72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaHTTPServer;
-			targetProxy = 6EFCCE5419EAFF5300889B72 /* PBXContainerItemProxy */;
-		};
-		6EFCCE5719EAFF5300889B72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RoutingHTTPServer;
-			targetProxy = 6EFCCE5619EAFF5300889B72 /* PBXContainerItemProxy */;
-		};
-		6EFCCE5919EAFF5300889B72 /* PBXTargetDependency */ = {
+		6ED3763319EB2E3F003A5288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CorePosts;
-			targetProxy = 6EFCCE5819EAFF5300889B72 /* PBXContainerItemProxy */;
+			targetProxy = 6ED3763219EB2E3F003A5288 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6E73DADD19EAF05300826F55 /* Debug */ = {
+		6E14C18919EB2D34006AF4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -691,6 +618,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -705,6 +633,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -712,7 +642,7 @@
 			};
 			name = Debug;
 		};
-		6E73DADE19EAF05300826F55 /* Release */ = {
+		6E14C18A19EB2D34006AF4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -733,6 +663,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -740,74 +671,69 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		6E73DAE019EAF05300826F55 /* Debug */ = {
+		6E14C18C19EB2D34006AF4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PostsServer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(CONTENTS_FOLDER_PATH)/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		6E73DAE119EAF05300826F55 /* Release */ = {
+		6E14C18D19EB2D34006AF4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PostsServer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(CONTENTS_FOLDER_PATH)/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		6E73DB1019EAF90800826F55 /* Debug */ = {
+		6E14C19719EB2D53006AF4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug",
-				);
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		6E73DB1119EAF90800826F55 /* Release */ = {
+		6E14C19819EB2D53006AF4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Posts-dhperxsggedwyhgbmvelxfkfvery/Build/Products/Debug",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = "";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -815,34 +741,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E73DAD319EAF05300826F55 /* Build configuration list for PBXProject "PostsServer" */ = {
+		6E14C17F19EB2D34006AF4BB /* Build configuration list for PBXProject "PostsServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E73DADD19EAF05300826F55 /* Debug */,
-				6E73DADE19EAF05300826F55 /* Release */,
+				6E14C18919EB2D34006AF4BB /* Debug */,
+				6E14C18A19EB2D34006AF4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E73DADF19EAF05300826F55 /* Build configuration list for PBXNativeTarget "PostsServer" */ = {
+		6E14C18B19EB2D34006AF4BB /* Build configuration list for PBXNativeTarget "PostsServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E73DAE019EAF05300826F55 /* Debug */,
-				6E73DAE119EAF05300826F55 /* Release */,
+				6E14C18C19EB2D34006AF4BB /* Debug */,
+				6E14C18D19EB2D34006AF4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E73DB0F19EAF90800826F55 /* Build configuration list for PBXNativeTarget "PostsServerDeamon" */ = {
+		6E14C19619EB2D53006AF4BB /* Build configuration list for PBXNativeTarget "PostsServerDaemon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E73DB1019EAF90800826F55 /* Debug */,
-				6E73DB1119EAF90800826F55 /* Release */,
+				6E14C19719EB2D53006AF4BB /* Debug */,
+				6E14C19819EB2D53006AF4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6E73DAD019EAF05300826F55 /* Project object */;
+	rootObject = 6E14C17C19EB2D34006AF4BB /* Project object */;
 }

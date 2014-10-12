@@ -1,12 +1,13 @@
 //
 //  main.swift
-//  PostsServerDeamon
+//  PostsServerDaemon
 //
 //  Created by Alsey Coleman Miller on 10/12/14.
 //  Copyright (c) 2014 ColemanCDA. All rights reserved.
 //
 
 import Foundation
+import NetworkObjects
 
 // start server
 let port = 8080 as UInt

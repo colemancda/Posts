@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E73DAD719EAF05300826F55"
+               BlueprintIdentifier = "6E14C18319EB2D34006AF4BB"
                BuildableName = "PostsServer.bundle"
                BlueprintName = "PostsServer"
                ReferencedContainer = "container:PostsServer.xcodeproj">
@@ -29,6 +29,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6E14C19119EB2D53006AF4BB"
+            BuildableName = "PostsServerDaemon"
+            BlueprintName = "PostsServerDaemon"
+            ReferencedContainer = "container:PostsServer.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,15 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E73DAD719EAF05300826F55"
-            BuildableName = "PostsServer.bundle"
-            BlueprintName = "PostsServer"
+            BlueprintIdentifier = "6E14C19119EB2D53006AF4BB"
+            BuildableName = "PostsServerDaemon"
+            BlueprintName = "PostsServerDaemon"
             ReferencedContainer = "container:PostsServer.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,7 +69,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E73DAD719EAF05300826F55"
+            BlueprintIdentifier = "6E14C18319EB2D34006AF4BB"
             BuildableName = "PostsServer.bundle"
             BlueprintName = "PostsServer"
             ReferencedContainer = "container:PostsServer.xcodeproj">

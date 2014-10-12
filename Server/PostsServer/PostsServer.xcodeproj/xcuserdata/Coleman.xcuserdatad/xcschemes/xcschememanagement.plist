@@ -7,9 +7,9 @@
 		<key>PostsServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>12</integer>
 		</dict>
-		<key>PostsServerDeamon.xcscheme</key>
+		<key>PostsServerDaemon.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>13</integer>
@@ -17,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6E73DAD719EAF05300826F55</key>
+		<key>6E14C18319EB2D34006AF4BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E73DAFF19EAF86200826F55</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6E73DB0A19EAF90800826F55</key>
+		<key>6E14C19119EB2D53006AF4BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
