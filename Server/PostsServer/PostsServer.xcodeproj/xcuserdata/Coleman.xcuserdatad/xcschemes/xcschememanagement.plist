@@ -4,15 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PostServerDaemon.xcscheme</key>
+		<key>PostsServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>2</integer>
+		</dict>
+		<key>PostsServerDeamon.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6E68CC9019EAD10400C1268B</key>
+		<key>6E73DAD719EAF05300826F55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E73DAFF19EAF86200826F55</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E73DB0A19EAF90800826F55</key>
 		<dict>
 			<key>primary</key>
 			<true/>

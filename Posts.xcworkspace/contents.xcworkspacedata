@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Server/PostServerDaemon/PostServerDaemon.xcodeproj">
+      location = "group:Server/PostsServer/PostsServer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:App/Posts/Posts.xcodeproj">
