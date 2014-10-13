@@ -11,11 +11,19 @@
 @import CorePostsServer;
 
 int main(int argc, const char * argv[]) {
+    
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Initializing Server Manager...");
+        
+        NSLog(@"Initializing Server Manager");
         
         [ServerManager sharedManager];
+        
+        NSUInteger port = 8080;
+        
+        NSLog(@"Starting Server on port %ld", port);
+        
+        [[ServerManager sharedManager] startOnPort: port];
+        
     }
     return 0;
 }

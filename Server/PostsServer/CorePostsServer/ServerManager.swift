@@ -54,11 +54,16 @@ import NetworkObjects
     
     // MARK: - Actions
     
-    public func start(onPort port: UInt) -> Bool {
+    /** Starts broadcasting the server. */
+    public func start(onPort port: UInt) -> NSError? {
         
-        //self.server
+        return self.server.start(onPort: port);
+    }
+    
+    /** Stops broadcasting the server. */
+    public func stop() {
         
-        return true
+        self.server.stop();
     }
     
     // MARK: - ServerDataSource
