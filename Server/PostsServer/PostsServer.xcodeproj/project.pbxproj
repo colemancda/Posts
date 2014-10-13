@@ -10,12 +10,6 @@
 		6E14C19519EB2D53006AF4BB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E14C19419EB2D53006AF4BB /* main.swift */; };
 		6E14C19A19EB2DC7006AF4BB /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E14C19919EB2DC7006AF4BB /* ServerManager.swift */; };
 		6E6F75B519EB3870008D83BA /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E98894919EB2EF100D53E5C /* NetworkObjects.framework */; };
-		6E6F760319EB74BC008D83BA /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E6F760419EB74BC008D83BA /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E6F760519EB74BC008D83BA /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E6F760619EB74BC008D83BA /* RoutingHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3761719EB2E31003A5288 /* RoutingHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E6F760719EB74BC008D83BA /* NetworkObjects.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E98894919EB2EF100D53E5C /* NetworkObjects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6E6F760819EB74BC008D83BA /* CorePosts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3761119EB2E31003A5288 /* CorePosts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E98894D19EB2F1A00D53E5C /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E98894E19EB2F1A00D53E5C /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E98894F19EB2F1A00D53E5C /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -167,21 +161,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6E6F760219EB747F008D83BA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 11;
-			files = (
-				6E6F760319EB74BC008D83BA /* CocoaLumberjack.framework in CopyFiles */,
-				6E6F760419EB74BC008D83BA /* CocoaAsyncSocket.framework in CopyFiles */,
-				6E6F760519EB74BC008D83BA /* CocoaHTTPServer.framework in CopyFiles */,
-				6E6F760619EB74BC008D83BA /* RoutingHTTPServer.framework in CopyFiles */,
-				6E6F760719EB74BC008D83BA /* NetworkObjects.framework in CopyFiles */,
-				6E6F760819EB74BC008D83BA /* CorePosts.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6ED3763919EB2EAC003A5288 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,7 +350,6 @@
 				6E14C18219EB2D34006AF4BB /* Resources */,
 				6ED3763919EB2EAC003A5288 /* CopyFiles */,
 				6ED3763B19EB2EBE003A5288 /* CopyFiles */,
-				6E6F760219EB747F008D83BA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -738,7 +716,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) @executable_path @executable_path/PostsServer.bundle/Contents/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/PostsServer.bundle/Contents/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
@@ -752,7 +730,7 @@
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) @executable_path";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
