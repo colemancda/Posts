@@ -14,6 +14,3 @@ FOUNDATION_EXPORT double CorePostsVersionNumber;
 //! Project version string for CorePosts.
 FOUNDATION_EXPORT const unsigned char CorePostsVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <CorePosts/PublicHeader.h>
-
-
