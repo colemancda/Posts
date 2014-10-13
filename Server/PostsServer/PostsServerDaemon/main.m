@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
         
-        [ServerManger sharedManager];
+        [[ServerHTTPServer alloc] init];
     }
     return 0;
 }

@@ -14,7 +14,6 @@
 		6E6F764919EB900A008D83BA /* CorePosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3761119EB2E31003A5288 /* CorePosts.framework */; };
 		6E6F764A19EB900A008D83BA /* NetworkObjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E98894919EB2EF100D53E5C /* NetworkObjects.framework */; };
 		6E6F764B19EB900A008D83BA /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED3761719EB2E31003A5288 /* RoutingHTTPServer.framework */; };
-		6E6F764E19EB9142008D83BA /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F764D19EB9142008D83BA /* ServerManager.swift */; };
 		6E98894D19EB2F1A00D53E5C /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762719EB2E31003A5288 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E98894E19EB2F1A00D53E5C /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3762119EB2E31003A5288 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E98894F19EB2F1A00D53E5C /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6ED3760B19EB2E31003A5288 /* CocoaHTTPServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -200,7 +199,6 @@
 		6E6F763319EB8F47008D83BA /* PostsServerDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PostsServerDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6F763519EB8F48008D83BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E6F764C19EB9141008D83BA /* PostsServerDaemon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PostsServerDaemon-Bridging-Header.h"; sourceTree = "<group>"; };
-		6E6F764D19EB9142008D83BA /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,7 +279,6 @@
 			children = (
 				6E6F764C19EB9141008D83BA /* PostsServerDaemon-Bridging-Header.h */,
 				6E6F763519EB8F48008D83BA /* main.m */,
-				6E6F764D19EB9142008D83BA /* ServerManager.swift */,
 			);
 			path = PostsServerDaemon;
 			sourceTree = "<group>";
@@ -555,7 +552,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E6F764E19EB9142008D83BA /* ServerManager.swift in Sources */,
 				6E6F763619EB8F48008D83BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -723,6 +720,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PostsServerDaemon/PostsServerDaemon-Bridging-Header.h";
@@ -757,6 +755,7 @@
 				6E6F763919EB8F48008D83BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
