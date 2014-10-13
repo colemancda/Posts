@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import NetworkObjects
 
-public class ServerManager: ServerDataSource, ServerDelegate {
+@objc public class ServerManager: ServerDataSource, ServerDelegate {
     
     // MARK: - Properties
     

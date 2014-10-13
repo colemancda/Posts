@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E14C19119EB2D53006AF4BB"
+            BlueprintIdentifier = "6E6F763219EB8F47008D83BA"
             BuildableName = "PostsServerDaemon"
             BlueprintName = "PostsServerDaemon"
             ReferencedContainer = "container:PostsServer.xcodeproj">
@@ -51,18 +51,13 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E14C19119EB2D53006AF4BB"
+            BlueprintIdentifier = "6E6F763219EB8F47008D83BA"
             BuildableName = "PostsServerDaemon"
             BlueprintName = "PostsServerDaemon"
             ReferencedContainer = "container:PostsServer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "DYLD_PRINT_LIBRARIES"
-            value = ""
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
