@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 @import NetworkObjects;
+@import CorePostsServer;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Initializing Server Manager...");
         
-        [[ServerHTTPServer alloc] init];
+        [ServerManager sharedManager];
     }
     return 0;
 }

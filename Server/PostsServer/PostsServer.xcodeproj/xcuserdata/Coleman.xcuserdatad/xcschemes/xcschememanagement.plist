@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CorePostsServer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>PostsServer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6E13011819EB963700901203</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E13012219EB963700901203</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6E14C18319EB2D34006AF4BB</key>
 		<dict>
 			<key>primary</key>
