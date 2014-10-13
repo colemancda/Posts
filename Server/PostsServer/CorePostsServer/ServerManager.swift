@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import NetworkObjects
 
-public class ServerManager: ServerDataSource, ServerDelegate {
+@objc public class ServerManager: ServerDataSource, ServerDelegate {
     
     // MARK: - Properties
     
@@ -50,6 +50,20 @@ public class ServerManager: ServerDataSource, ServerDelegate {
     private func initServer() -> Server {
         
         return Server(dataSource: self, delegate: self, managedObjectModel: self.model, searchPath: "search", resourceIDAttributeName: "id", prettyPrintJSON: false, sslIdentityAndCertificates: nil, permissionsEnabled: true)
+    }
+    
+    // MARK: - Actions
+    
+    /** Starts broadcasting the server. */
+    public func start(onPort port: UInt) -> NSError? {
+        
+        return self.server.start(onPort: port);
+    }
+    
+    /** Stops broadcasting the server. */
+    public func stop() {
+        
+        self.server.stop();
     }
     
     // MARK: - ServerDataSource

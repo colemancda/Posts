@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
-               BuildableName = "PostServerDaemon"
-               BlueprintName = "PostServerDaemon"
-               ReferencedContainer = "container:PostServerDaemon.xcodeproj">
+               BlueprintIdentifier = "6E14C18319EB2D34006AF4BB"
+               BuildableName = "PostsServer.bundle"
+               BlueprintName = "PostsServer"
+               ReferencedContainer = "container:PostsServer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
-            BuildableName = "PostServerDaemon"
-            BlueprintName = "PostServerDaemon"
-            ReferencedContainer = "container:PostServerDaemon.xcodeproj">
+            BlueprintIdentifier = "6E6F763219EB8F47008D83BA"
+            BuildableName = "PostsServerDaemon"
+            BlueprintName = "PostsServerDaemon"
+            ReferencedContainer = "container:PostsServer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
-            BuildableName = "PostServerDaemon"
-            BlueprintName = "PostServerDaemon"
-            ReferencedContainer = "container:PostServerDaemon.xcodeproj">
+            BlueprintIdentifier = "6E6F763219EB8F47008D83BA"
+            BuildableName = "PostsServerDaemon"
+            BlueprintName = "PostsServerDaemon"
+            ReferencedContainer = "container:PostsServer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -66,15 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E68CC9019EAD10400C1268B"
-            BuildableName = "PostServerDaemon"
-            BlueprintName = "PostServerDaemon"
-            ReferencedContainer = "container:PostServerDaemon.xcodeproj">
+            BlueprintIdentifier = "6E14C18319EB2D34006AF4BB"
+            BuildableName = "PostsServer.bundle"
+            BlueprintName = "PostsServer"
+            ReferencedContainer = "container:PostsServer.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

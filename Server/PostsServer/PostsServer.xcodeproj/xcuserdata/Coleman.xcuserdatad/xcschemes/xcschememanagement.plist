@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CorePostsServer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>PostsServer.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>PostsServerDaemon.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6E13011819EB963700901203</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E13012219EB963700901203</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E14C18319EB2D34006AF4BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E14C19119EB2D53006AF4BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E6F763219EB8F47008D83BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
