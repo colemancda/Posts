@@ -25,5 +25,8 @@ int main(int argc, const char * argv[]) {
         [[ServerManager sharedManager] startOnPort: port];
         
     }
+    
+    [[NSRunLoop currentRunLoop] run];
+    
     return 0;
 }
