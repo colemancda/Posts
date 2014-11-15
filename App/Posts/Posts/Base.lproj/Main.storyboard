@@ -1,25 +1,130 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8MZ-ab-hnT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="dJv-ov-tgV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="8MZ-ab-hnT" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="u1t-Tc-Xlf"/>
+                        <viewControllerLayoutGuide type="bottom" id="VpR-B5-YRj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="s4B-hu-WIn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://localhost:8080" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UCM-f6-W1O">
+                                <rect key="frame" x="123" y="28" width="354" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="354" id="lj1-xB-Hyb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" keyboardAppearance="light" returnKeyType="next"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lj1-xB-Hyb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="28" width="354" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="lj1-xB-Hyb"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-xf-7tM">
+                                <rect key="frame" x="123" y="66" width="354" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="omg-TN-Gk4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="66" width="354" height="30"/>
+                                    <mask key="constraints">
+                                        <exclude reference="omg-TN-Gk4"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="re4-2V-3eD">
+                                <rect key="frame" x="123" y="104" width="354" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="W6f-jV-3TT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="104" width="354" height="30"/>
+                                    <mask key="constraints">
+                                        <exclude reference="W6f-jV-3TT"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15A-fa-YQV">
+                                <rect key="frame" x="281" y="550" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="8MZ-ab-hnT" eventType="touchUpInside" id="fxV-ed-zuU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d2k-xf-7tM" firstAttribute="top" secondItem="UCM-f6-W1O" secondAttribute="bottom" constant="8" id="0gK-WI-4WP"/>
+                            <constraint firstAttribute="centerX" secondItem="UCM-f6-W1O" secondAttribute="centerX" id="BbB-CM-08h"/>
+                            <constraint firstItem="UCM-f6-W1O" firstAttribute="top" secondItem="u1t-Tc-Xlf" secondAttribute="bottom" constant="8" id="BxV-W9-Olf"/>
+                            <constraint firstItem="d2k-xf-7tM" firstAttribute="leading" secondItem="re4-2V-3eD" secondAttribute="leading" id="D7P-5z-9Wb"/>
+                            <constraint firstAttribute="centerX" secondItem="re4-2V-3eD" secondAttribute="centerX" id="E5A-zh-7qZ"/>
+                            <constraint firstItem="d2k-xf-7tM" firstAttribute="trailing" secondItem="re4-2V-3eD" secondAttribute="trailing" id="EPf-FY-GJE"/>
+                            <constraint firstItem="d2k-xf-7tM" firstAttribute="leading" secondItem="UCM-f6-W1O" secondAttribute="leading" id="Eks-ut-bf6"/>
+                            <constraint firstAttribute="centerX" secondItem="15A-fa-YQV" secondAttribute="centerX" id="OwP-7P-ubp"/>
+                            <constraint firstAttribute="centerX" secondItem="d2k-xf-7tM" secondAttribute="centerX" id="QfN-OO-mTt"/>
+                            <constraint firstItem="VpR-B5-YRj" firstAttribute="top" secondItem="15A-fa-YQV" secondAttribute="bottom" constant="20" id="SQl-HH-bU3"/>
+                            <constraint firstItem="UCM-f6-W1O" firstAttribute="leading" secondItem="s4B-hu-WIn" secondAttribute="leadingMargin" constant="20" id="XMH-1B-vfI"/>
+                            <constraint firstItem="UCM-f6-W1O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="s4B-hu-WIn" secondAttribute="leadingMargin" constant="20" id="bMp-II-hwj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UCM-f6-W1O" secondAttribute="trailing" constant="20" id="byz-MC-Var"/>
+                            <constraint firstItem="d2k-xf-7tM" firstAttribute="trailing" secondItem="UCM-f6-W1O" secondAttribute="trailing" id="cDG-rS-VRa"/>
+                            <constraint firstItem="re4-2V-3eD" firstAttribute="top" secondItem="d2k-xf-7tM" secondAttribute="bottom" constant="8" id="ilD-4F-8Ue"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="UCM-f6-W1O" secondAttribute="trailing" constant="20" id="lFl-CL-Aoc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XMH-1B-vfI"/>
+                                <exclude reference="bMp-II-hwj"/>
+                                <exclude reference="byz-MC-Var"/>
+                                <exclude reference="lFl-CL-Aoc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XMH-1B-vfI"/>
+                                <include reference="byz-MC-Var"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="bMp-II-hwj"/>
+                                <include reference="lFl-CL-Aoc"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="re4-2V-3eD" id="2xP-wM-dD9"/>
+                        <outlet property="urlTextField" destination="UCM-f6-W1O" id="ZoP-Zq-CRy"/>
+                        <outlet property="usernameTextField" destination="d2k-xf-7tM" id="4mk-9J-g8v"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecg-gS-jdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="375" y="323"/>
         </scene>
     </scenes>
 </document>

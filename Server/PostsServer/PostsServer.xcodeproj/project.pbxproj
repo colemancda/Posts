@@ -241,7 +241,6 @@
 		6E14C1A219EB2E12006AF4BB /* CorePosts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePosts.xcodeproj; path = ../../Shared/CorePosts/CorePosts.xcodeproj; sourceTree = "<group>"; };
 		6E6F763319EB8F47008D83BA /* PostsServerDaemon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PostsServerDaemon; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6F763519EB8F48008D83BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6E6F764C19EB9141008D83BA /* PostsServerDaemon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PostsServerDaemon-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,7 +380,6 @@
 		6E6F763419EB8F48008D83BA /* PostsServerDaemon */ = {
 			isa = PBXGroup;
 			children = (
-				6E6F764C19EB9141008D83BA /* PostsServerDaemon-Bridging-Header.h */,
 				6E6F763519EB8F48008D83BA /* main.m */,
 			);
 			path = PostsServerDaemon;
@@ -996,8 +994,6 @@
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/PostsServer.bundle/Contents/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PostsServerDaemon/PostsServerDaemon-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1008,7 +1004,6 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PostsServerDaemon/PostsServerDaemon-Bridging-Header.h";
 			};
 			name = Release;
 		};
