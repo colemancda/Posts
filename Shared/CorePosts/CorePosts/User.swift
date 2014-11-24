@@ -19,4 +19,5 @@ public class User: NSManagedObject {
     @NSManaged public var posts: NSSet?
     @NSManaged public var followers: NSSet?
     @NSManaged public var following: NSSet?
+    @NSManaged public var sessions: NSSet?
 }

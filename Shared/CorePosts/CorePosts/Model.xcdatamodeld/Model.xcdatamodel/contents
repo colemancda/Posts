@@ -15,6 +15,11 @@
         <relationship name="likes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="likedPosts" inverseEntity="User" syncable="YES"/>
         <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="posts" inverseEntity="User" syncable="YES"/>
     </entity>
+    <entity name="Session" representedClassName="CorePosts.Session" syncable="YES">
+        <attribute name="id" attributeType="Integer 64" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="token" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="sessions" inverseEntity="User" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName="CorePosts.User" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -24,11 +29,13 @@
         <relationship name="following" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="followers" inverseEntity="User" syncable="YES"/>
         <relationship name="likedPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="likes" inverseEntity="Post" syncable="YES"/>
         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Post" inverseName="user" inverseEntity="Post" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" maxCount="30" deletionRule="Cascade" destinationEntity="Session" inverseName="user" inverseEntity="Session" syncable="YES"/>
     </entity>
     <elements>
         <element name="Attachment" positionX="-18" positionY="72" width="128" height="73"/>
         <element name="Image" positionX="-27" positionY="54" width="128" height="58"/>
         <element name="Post" positionX="-54" positionY="0" width="128" height="133"/>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Session" positionX="-45" positionY="54" width="128" height="88"/>
     </elements>
 </model>

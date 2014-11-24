@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1B75441A22C88A000EAFBC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B75431A22C88A000EAFBC /* Session.swift */; };
 		6E2D4CA919E045C60049D0D1 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D4CA819E045C60049D0D1 /* Attachment.swift */; };
 		6E2D4CAA19E045C60049D0D1 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D4CA819E045C60049D0D1 /* Attachment.swift */; };
 		6E2D4CAC19E045C70049D0D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D4CAB19E045C70049D0D1 /* User.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E1B75431A22C88A000EAFBC /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		6E2D4CA819E045C60049D0D1 /* Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
 		6E2D4CAB19E045C70049D0D1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6E2D4CAE19E045C70049D0D1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				6E56634319D3A9DF00BF4948 /* CorePosts.h */,
 				6EF0DB7919D4C4F10087DD6D /* Model.xcdatamodeld */,
+				6E1B75431A22C88A000EAFBC /* Session.swift */,
 				6E2D4CB419E045C70049D0D1 /* Image.swift */,
 				6E2D4CAE19E045C70049D0D1 /* Post.swift */,
 				6E2D4CAB19E045C70049D0D1 /* User.swift */,
@@ -290,6 +293,7 @@
 				6E2D4CB519E045C70049D0D1 /* Image.swift in Sources */,
 				6EF0DB7B19D4C4F10087DD6D /* Model.xcdatamodeld in Sources */,
 				6E2D4CAC19E045C70049D0D1 /* User.swift in Sources */,
+				6E1B75441A22C88A000EAFBC /* Session.swift in Sources */,
 				6E2D4CAF19E045C70049D0D1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
