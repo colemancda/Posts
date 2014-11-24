@@ -11,13 +11,10 @@ import CoreData
 
 public class Post: NSManagedObject {
 
-    @NSManaged var date: NSDate
-    @NSManaged var id: NSNumber
-    @NSManaged var text: String
-    @NSManaged var attachment: Attachment?
-    @NSManaged var likes: NSSet?
-    @NSManaged var user: User
-    @NSManaged var username: String
-    @NSManaged var password: String
-    @NSManaged var email: String?
+    @NSManaged public var id: UInt
+    @NSManaged public var date: NSDate
+    @NSManaged public var text: String
+    @NSManaged public var attachment: Attachment?
+    @NSManaged public var likes: NSSet?
+    @NSManaged public var user: User
 }

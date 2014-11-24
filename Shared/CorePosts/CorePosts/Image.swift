@@ -11,6 +11,6 @@ import CoreData
 
 public class Image: Attachment {
 
-    @NSManaged var data: NSData
+    @NSManaged public var data: NSData
 
 }

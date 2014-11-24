@@ -9,9 +9,9 @@
 import Foundation
 import CoreData
 
-class Attachment: NSManagedObject {
+public class Attachment: NSManagedObject {
 
-    @NSManaged var id: NSNumber
-    @NSManaged var post: NSManagedObject
+    @NSManaged public var id: UInt
+    @NSManaged public var post: Post
 
 }

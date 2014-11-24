@@ -9,9 +9,14 @@
 import Foundation
 import CoreData
 
-class User: NSManagedObject {
+public class User: NSManagedObject {
 
-    @NSManaged var id: NSNumber
-    @NSManaged var likedPosts: NSSet?
-    @NSManaged var posts: NSSet?
+    @NSManaged public var id: UInt
+    @NSManaged public var username: String
+    @NSManaged public var password: String
+    @NSManaged public var email: String?
+    @NSManaged public var likedPosts: NSSet?
+    @NSManaged public var posts: NSSet?
+    @NSManaged public var followers: NSSet?
+    @NSManaged public var following: NSSet?
 }

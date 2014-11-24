@@ -20,6 +20,8 @@
         <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="password" attributeType="String" minValueString="6" syncable="YES"/>
         <attribute name="username" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="followers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="following" inverseEntity="User" syncable="YES"/>
+        <relationship name="following" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="followers" inverseEntity="User" syncable="YES"/>
         <relationship name="likedPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="likes" inverseEntity="Post" syncable="YES"/>
         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Post" inverseName="user" inverseEntity="Post" syncable="YES"/>
     </entity>
@@ -27,6 +29,6 @@
         <element name="Attachment" positionX="-18" positionY="72" width="128" height="73"/>
         <element name="Image" positionX="-27" positionY="54" width="128" height="58"/>
         <element name="Post" positionX="-54" positionY="0" width="128" height="133"/>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="163"/>
     </elements>
 </model>
