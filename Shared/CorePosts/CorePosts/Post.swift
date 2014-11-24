@@ -9,13 +9,15 @@
 import Foundation
 import CoreData
 
-class Post: NSManagedObject {
+public class Post: NSManagedObject {
 
     @NSManaged var date: NSDate
     @NSManaged var id: NSNumber
     @NSManaged var text: String
-    @NSManaged var attachment: Attachment
-    @NSManaged var likes: NSSet
+    @NSManaged var attachment: Attachment?
+    @NSManaged var likes: NSSet?
     @NSManaged var user: User
-
+    @NSManaged var username: String
+    @NSManaged var password: String
+    @NSManaged var email: String?
 }

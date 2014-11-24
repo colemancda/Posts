@@ -12,8 +12,6 @@ import CoreData
 class User: NSManagedObject {
 
     @NSManaged var id: NSNumber
-    @NSManaged var likedPosts: NSSet
-    @NSManaged var posts: NSSet
-    @NSManaged var connectedClients: NSManagedObject
-
+    @NSManaged var likedPosts: NSSet?
+    @NSManaged var posts: NSSet?
 }

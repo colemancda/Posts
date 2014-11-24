@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class Image: Attachment {
+public class Image: Attachment {
 
     @NSManaged var data: NSData
 

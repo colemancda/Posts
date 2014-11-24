@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388a" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6735" systemVersion="14C68k" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Attachment" representedClassName="CorePosts.Attachment" isAbstract="YES" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="attachment" inverseEntity="Post" syncable="YES"/>
-    </entity>
-    <entity name="Client" representedClassName="CorePosts.Client" syncable="YES">
-        <attribute name="firstParty" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="platform" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="secret" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="connectedClients" inverseEntity="User" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="post" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="attachment" inverseEntity="Post" syncable="YES"/>
     </entity>
     <entity name="Image" representedClassName="CorePosts.Image" parentEntity="Attachment" syncable="YES">
-        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="data" attributeType="Binary" syncable="YES"/>
     </entity>
     <entity name="Post" representedClassName="CorePosts.Post" syncable="YES">
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
         <relationship name="attachment" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Attachment" inverseName="post" inverseEntity="Attachment" syncable="YES"/>
         <relationship name="likes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="likedPosts" inverseEntity="User" syncable="YES"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="posts" inverseEntity="User" syncable="YES"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="posts" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName="CorePosts.User" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <relationship name="connectedClients" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="users" inverseEntity="Client" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="password" attributeType="String" minValueString="6" syncable="YES"/>
+        <attribute name="username" attributeType="String" minValueString="0" syncable="YES"/>
         <relationship name="likedPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="likes" inverseEntity="Post" syncable="YES"/>
         <relationship name="posts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Post" inverseName="user" inverseEntity="Post" syncable="YES"/>
     </entity>
     <elements>
         <element name="Attachment" positionX="-18" positionY="72" width="128" height="73"/>
-        <element name="Client" positionX="-36" positionY="9" width="128" height="118"/>
         <element name="Image" positionX="-27" positionY="54" width="128" height="58"/>
         <element name="Post" positionX="-54" positionY="0" width="128" height="133"/>
-        <element name="User" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="133"/>
     </elements>
 </model>
